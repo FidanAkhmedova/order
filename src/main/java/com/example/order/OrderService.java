@@ -1,14 +1,14 @@
 package com.example.order;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class OrderService {
-//
-    private OrderNameService orderNameSequence;
-    public Order createNewOrder(){
+
+    public Order createNewOrder() {
         Order order = new Order();
-        orderNameSequence.initName(order);
+        order.setName("Hello Java");
         return order;
     }
 }
