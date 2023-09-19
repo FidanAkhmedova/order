@@ -9,16 +9,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 @SpringBootApplication
-//@ComponentScan(basePackages = "com.example.order")
 public class Main implements CommandLineRunner {
 
     private static final Logger LOG = LoggerFactory.getLogger(Main.class);
-
-//    private final OrderService orderService;
-
-//    public Main(OrderService orderService) {
-//        this.orderService = orderService;
-//    }
 
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
